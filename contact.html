@@ -1,0 +1,112 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>Contact - CityCare Hospital</title>
+    <link rel="stylesheet" href="hospi.css">
+</head>
+<body>
+
+<header>
+
+<nav>
+    <h1>CityCare Hospital</h1>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="doctors.html">Doctors</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+</div>
+</header>
+
+
+<style>
+body{
+font-family:Arial;
+background:#f2f2f2;
+}
+
+.container{
+width:400px;
+margin:auto;
+background:white;
+padding:20px;
+margin-top:50px;
+border-radius:10px;
+box-shadow:0 0 10px blue;
+}
+
+h2{
+text-align:center;
+}
+
+input,select,textarea{
+width:100%;
+padding:8px;
+margin-top:5px;
+margin-bottom:15px;
+border-radius:5px;
+border:1px solid #ccc;
+}
+
+button{
+width:100%;
+padding:10px;
+background:blue;
+color:white;
+border:none;
+border-radius:5px;
+font-size:16px;
+cursor:pointer;
+}
+
+button:hover{
+background:darkblue;
+}
+</style>
+
+</head>
+
+
+
+<div class="container">
+
+<h2 background style="color:brown">Book an Appointment</h2>
+
+<form>
+
+<label>Full Name</label>
+<input type="text" placeholder="Enter your name" required>
+
+<label>Email</label>
+<input type="email" placeholder="Enter your email" required>
+
+<label>Phone Number</label>
+<input type="tel" placeholder="Enter your phone number" required>
+
+<label>Select Service</label>
+<select>
+<option>Doctor Consultation</option>
+<option>Dental Checkup</option>
+<option>General Checkup</option>
+</select>
+
+<label>Appointment Date</label>
+<input type="date" required>
+
+<label>Appointment Time</label>
+<input type="time" required>
+
+<label>Additional Message</label>
+<textarea placeholder="Write your message"></textarea>
+
+<button type="submit">Book Appointment</button>
+
+</form>
+
+</div>
+
+</body>
+</html>

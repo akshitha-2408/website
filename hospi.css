@@ -1,0 +1,308 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    margin: 0;
+}
+header {
+    background:darkseagreen;
+    color: white;
+    padding: 15px 0;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+    display: inline;
+    text-align: right;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color:red;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;  /* full screen height */
+    background-image: url("https://investin.org/cdn/shop/articles/jafar-ahmed-E285pJbC4uE-unsplash.jpg?v=1634293259");
+    background-size: cover;
+    background-position: center;
+}
+
+.section {
+    padding: 40px 20px;
+}
+   
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    background: #f1f1f1;
+    image-resolution:500px;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height:450px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+footer {
+    background:black;
+    padding-top: 40px 0  ;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+form button {
+    padding: 10px 20px;
+    background: #0077b6;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #023e8a;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+}
+
+.img{
+    height:auto;
+    width:auto;
+}
+.map{
+    width:100%;
+    height:350px;
+    display:flex;
+    flex-direction: column;
+    align-items:centre;
+    justify-content: centre;
+    
+}
+h2{
+    color:red;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-con {
+    width: 30%;
+    min-width: 220px;
+    color:aqua;
+}
+
+.footer-con h3 {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.footer-con p {
+    margin: 6px 0;
+}
+
+.footer-con ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-con ul li {
+    margin: 8px 0;
+}
+
+.footer-con ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-con ul li a:hover {
+    color: orange;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    color:blanchedalmond;
+}
+
+.social-icons li {
+    list-style: none;
+    color:aquamarine;
+}
+
+.social-icons i {
+    font-size: 20px;
+    color: white;
+    transition: 0.3s;
+}
+
+.social-icons i:hover {
+    color: orange;
+}
+
+/* Bottom bar */
+.bottom {
+    background:orange;
+    text-align: center;
+    padding: 12px 0;
+    margin-top: 30px;
+}
+
+.bottom p {
+    color:black;
+    margin: 0;
+}
+.service-table {
+    border-radius: 8px;
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.service-table {
+    width: 100%;
+    border-collapse: collapse;   /* Important for single clean lines */
+    margin-top: 20px;
+}
+
+/* Border for table, th and td */
+.service-table,
+.service-table th,
+.service-table td {
+    border: 1px solid #333;
+}
+
+/* Header styling */
+.service-table th {
+    background: #0077b6;
+    color: white;
+    padding: 10px;
+}
+
+/* Table cells */
+.service-table td {
+    padding: 10px;
+    text-align: center;
+}
+.container footer-container{
+    color:aqua
+}
+.list{
+    color:red;
+}
+.list li{
+    color:antiquewhite;
+}
+h1{
+    text-align: left;
+}
+.cards{
+display:flex;
+gap:30px;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.card{
+width:250px;
+background:white;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+text-align:center;
+
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+
+.card:hover{
+transform: translateY(-12px);
+box-shadow:0 12px 25px pink;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
